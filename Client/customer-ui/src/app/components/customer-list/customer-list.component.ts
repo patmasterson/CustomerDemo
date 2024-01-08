@@ -74,7 +74,7 @@ export class CustomerListComponent implements OnInit, AfterViewInit {
     this.selectedCustomer = e;
 
     const dialogRef = this.dialog.open(CustomerEditDialogComponent, {
-      height: "500px",
+      height: "550px",
       width: "400px",
       data: this.selectedCustomer
     });
