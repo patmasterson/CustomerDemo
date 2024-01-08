@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, SkipSelf } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { Customer } from '../models/customer.model';
+import { DatePipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Customer } from '../models/customer.model';
 export class CustomerService {
   baseUrl = environment.apiUrl;
   
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private datePipe: DatePipe) { }
 
   getCustomers() {
     console.log('getCustomers');
@@ -27,4 +28,9 @@ export class CustomerService {
       return this.http.post<Customer>(`${this.baseUrl}/api/customer`, customer);
     }
   }
+
+  toDateTimeFormat(date: string) {
+    return this.datePipe.transform(date, 'MM/dd/yyyy h:mm:ss');
+  }
+
 }

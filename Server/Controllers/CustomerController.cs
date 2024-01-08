@@ -54,6 +54,7 @@ namespace CustomerDemo.Controllers
 
             try
             {
+                customer.LastUpdatedDate = DateTime.Now;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)

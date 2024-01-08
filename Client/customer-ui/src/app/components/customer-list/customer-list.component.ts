@@ -21,7 +21,7 @@ export class CustomerListComponent implements OnInit, AfterViewInit {
   selectedCustomer: Customer | undefined;
 
   
-  constructor(private customerService: CustomerService, private fb: FormBuilder, private router: Router, 
+  constructor(public customerService: CustomerService, private fb: FormBuilder, private router: Router, 
       private dialog: MatDialog) {
     
   }
@@ -83,6 +83,7 @@ export class CustomerListComponent implements OnInit, AfterViewInit {
       if (result) {
         let customer = new Customer();
         customer = result;
+
         this.customerService.saveCustomer(customer).subscribe({
           next: resp => {
             console.log(resp);
@@ -93,5 +94,9 @@ export class CustomerListComponent implements OnInit, AfterViewInit {
       }
     })
 
+  }
+
+  formatDate(date: any) {
+    return this.customerService.toDateTimeFormat(date);
   }
 }

@@ -21,7 +21,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CustomerEditDialogComponent } from './components/customer-edit-dialog/customer-edit-dialog.component';
-
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,9 @@ import { CustomerEditDialogComponent } from './components/customer-edit-dialog/c
     MatIconModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
