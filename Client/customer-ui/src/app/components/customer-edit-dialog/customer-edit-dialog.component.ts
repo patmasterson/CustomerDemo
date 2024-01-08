@@ -23,7 +23,7 @@ export class CustomerEditDialogComponent {
       id: [customer.id],
       firstName: [customer.firstName, Validators.required],
       lastName: [customer.lastName],
-      email: [customer.email],
+      email: [customer.email, Validators.email],
       nickName: [customer.nickName]
     })
 
@@ -42,6 +42,8 @@ export class CustomerEditDialogComponent {
   save() {
     let cust = new Customer();
     cust = this.custForm.value;
+
+    console.log(this.custForm);
 
     this.dialogRef.close(cust);
   }

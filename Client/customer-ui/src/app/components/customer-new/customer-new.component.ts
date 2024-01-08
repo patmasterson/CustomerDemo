@@ -21,7 +21,7 @@ export class CustomerNewComponent implements OnInit {
       id: [0],
       firstName: ['', Validators.required],
       lastName: [''],
-      email: [''],
+      email: ['', Validators.email],
       nickName: ['']
     })
   }
