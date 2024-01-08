@@ -1,0 +1,122 @@
+[
+  {
+    "FirstName": "Steve",
+    "LastName": "Rogers",
+    "Email": "SteveRogers@avengers.com",
+    "NickName": "Captain America"
+  },
+  {
+    "FirstName": "Bruce",
+    "LastName": "Banner",
+    "Email": "BruceBanner@avengers.com",
+    "NickName": "Hulk"
+  },
+  {
+    "FirstName": "Tony",
+    "LastName": "Stark",
+    "Email": "TonyStark@avengers.com",
+    "NickName": "Iron Man"
+  },
+  {
+    "FirstName": "Clint",
+    "LastName": "Barton",
+    "Email": "ClintBarton@avengers.com",
+    "NickName": "Hawkeye"
+  },
+  {
+    "FirstName": "Natasha",
+    "LastName": "Romanoff",
+    "Email": "NatashaRomanoff@avengers.com",
+    "NickName": "Black Widow"
+  },
+  {
+    "FirstName": "Sam",
+    "LastName": "Wilson",
+    "Email": "SamWilson@avengers.com",
+    "NickName": "Falcon"
+  },
+  {
+    "FirstName": "Thor",
+    "LastName": "Thunder",
+    "Email": "Thor@avengers.com",
+    "NickName": "Thor"
+  },
+  {
+    "FirstName": "Peter",
+    "LastName": "Parker",
+    "Email": "PeterParker@avengers.com",
+    "NickName": "Spiderman"
+  },
+  {
+    "FirstName": "Bucky",
+    "LastName": "Barnes",
+    "Email": "BuckyBarnes@avengers.com",
+    "NickName": "Winter Soldier"
+  },
+  {
+    "FirstName": "James",
+    "LastName": "Rhodes",
+    "Email": "JamesRhodes@avengers.com",
+    "NickName": "War Machine"
+  },
+  {
+    "FirstName": "Steven",
+    "LastName": "Strange",
+    "Email": "DrStrange@avengers.com",
+    "NickName": "Doctor Strange"
+  },
+  {
+    "FirstName": "Wanda",
+    "LastName": "Maximoff",
+    "Email": "Wanda@avengers.com",
+    "NickName": "Scarlet Witch"
+  },
+  {
+    "FirstName": "Thanos",
+    "LastName": "",
+    "Email": "I_AM_Inevitable@thanos.com",
+    "NickName": "Thanos"
+  },
+  {
+    "FirstName": "Groot",
+    "LastName": "",
+    "Email": "IAmGroot@IAmGroot.com",
+    "NickName": "Groot"
+  },
+  {
+    "FirstName": "Peter",
+    "LastName": "Quill",
+    "Email": "PeterQuill@Guardians.com",
+    "NickName": "Star Lord"
+  },
+  {
+    "FirstName": "Gamora",
+    "LastName": "",
+    "Email": "Gamora@Guardians.com",
+    "NickName": "Gamora"
+  },
+  {
+    "FirstName": "Drax",
+    "LastName": "",
+    "Email": "Drax@Guardians.com",
+    "NickName": "Drax"
+  },
+  {
+    "FirstName": "Rocket",
+    "LastName": "Racoon",
+    "Email": "Rocket@Guradians.com",
+    "NickName": "Rocket"
+  },
+  {
+    "FirstName": "Vision",
+    "LastName": "",
+    "Email": "",
+    "NickName": "Vision"
+  },
+  {
+    "FirstName": "Nick",
+    "LastName": "Fury",
+    "Email": "Fury@avengers.com",
+    "NickName": "Fury"
+  }
+]

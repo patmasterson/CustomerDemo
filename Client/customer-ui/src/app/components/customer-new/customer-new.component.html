@@ -1,0 +1,49 @@
+<mat-card style="margin: 20px; margin-top: 80px;">
+    <mat-card-header>
+        <mat-card-title>Create New Customer</mat-card-title>
+    </mat-card-header>
+    <mat-card-content style="margin-top: 10px;">
+        <form [formGroup]="custForm">
+            <mat-grid-list cols="2" rowHeight="45px">
+                <mat-grid-tile [colspan]="1" [rowspan]="2" >
+                    <mat-form-field class="fullWidth">
+                        <mat-label>First Name</mat-label>
+                        <input type="text" placeholder="First Name" matInput formControlName="firstName">
+                        <mat-error>First Name is required</mat-error>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2"></mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2" >
+                    <mat-form-field class="fullWidth">
+                        <mat-label>Last Name</mat-label>
+                        <input type="text" placeholder="Last Name" matInput formControlName="lastName">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2"></mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2" >
+                    <mat-form-field class="fullWidth">
+                        <mat-label>Nickname</mat-label>
+                        <input type="text" placeholder="Nickname" matInput formControlName="nickName">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2"></mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2" >
+                    <mat-form-field class="fullWidth">
+                        <mat-label>Email</mat-label>
+                        <input type="email" placeholder="Email Address" matInput formControlName="email">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="3"></mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="2">
+                    <button style="margin-right: 10px;" [disabled]="!custForm.valid" mat-raised-button color="primary" (click)="save()">Save</button>
+                    <button mat-raised-button color="basic" (click)="cancel()">Cancel</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    
+    </mat-card-content>
+</mat-card>
+
+
+
+
